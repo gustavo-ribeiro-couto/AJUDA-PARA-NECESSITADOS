@@ -1,0 +1,11 @@
+<h1>lendas</h1>
+
+<div class="estralas-container">
+    <a href="/">adicionar estralas</a>
+    {{#each estralas}}
+    <div>
+        #{{this.id}} - <span class="bold"><a href="/estralas/{{this.id}}">{{this.nome}}</a> </span>{{this.serie}}  serie!
+    </div>
+    {{/each}}
+
+</h1>

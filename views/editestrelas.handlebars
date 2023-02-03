@@ -1,0 +1,16 @@
+<h1>edite o estrela:</h1>
+
+<form action="/estrelas/updateestrela" method="POST" class="form">    
+    <input type="hidden" name="id" value="{{estrela.id}}"><!-- aqui recebemos um input, mas o hidden não exibe. -->
+   
+    <div class="form-control">
+        <label for="title">nome do estrela</label>
+        <input type="text" name="name" id="name" placeholder="Digite o nome do estrela" value="{{estrela.nome}}">
+    </div>
+
+    <div class="form-control">
+        <label for="serie">posicao da estrela</label>
+        <input type="text" name="serie" id="serie" placeholder="Qual a série do estrela" value="{{estrela.serie}}">
+    </div>
+    <input type="submit" value="editar">
+</form>
